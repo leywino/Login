@@ -29,6 +29,7 @@ class ScreenHome extends StatelessWidget {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
+              // ignore: prefer_const_literals_to_create_immutables
               children: [
                 const Text(
                   "Our products",
@@ -67,6 +68,7 @@ class ScreenHome extends StatelessWidget {
             ),
             ListTile(
               leading: ClipRRect(
+                // ignore: sized_box_for_whitespace
                 child: Container(
                     height: 60,
                     // width: 50,
@@ -115,6 +117,7 @@ class ScreenHome extends StatelessWidget {
               thickness: 0.8,
             ),
             ListTile(
+              // ignore: sized_box_for_whitespace
               leading: Container(
                 height: 70,
                 child: ClipRRect(
@@ -307,6 +310,7 @@ signout(BuildContext ctx) async {
   final sharedPrefs = await SharedPreferences.getInstance();
   await sharedPrefs.clear();
 
+  // ignore: use_build_context_synchronously
   Navigator.of(ctx).pushAndRemoveUntil(
       MaterialPageRoute(builder: (ctx1) => const ScreenLogin()),
       (route) => false);

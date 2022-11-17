@@ -131,6 +131,7 @@ class _ScreenLoginState extends State<ScreenLogin> {
     if (username == "admin" && password == "password") {
       final sharedPrefs = await SharedPreferences.getInstance();
       sharedPrefs.setBool(saveKeyName, true);
+      // ignore: use_build_context_synchronously
       Navigator.of(ctx).pushReplacement(
           MaterialPageRoute(builder: ((context) => const ScreenHome())));
     }

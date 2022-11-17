@@ -47,6 +47,7 @@ class _ScreenSplashState extends State<ScreenSplash> {
 
   Future<void> gotoLogin() async {
     await Future.delayed(const Duration(seconds: 1));
+    // ignore: use_build_context_synchronously
     Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (ctx) {
       return const ScreenLogin();
     }));
@@ -58,6 +59,7 @@ class _ScreenSplashState extends State<ScreenSplash> {
     if (userLoggedIn == null || userLoggedIn == false) {
       gotoLogin();
     } else {
+      // ignore: use_build_context_synchronously
       Navigator.of(context)
           .pushReplacement(MaterialPageRoute(builder: (ctx1) => const ScreenHome()));
     }
