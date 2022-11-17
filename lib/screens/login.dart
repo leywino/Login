@@ -57,7 +57,7 @@ class _ScreenLoginState extends State<ScreenLogin> {
                     ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return "This field can't be empty";
+                        return "Username can't be empty";
                       } else if (value != "admin") {
                         return "Wrong Username";
                       } else {
@@ -77,7 +77,7 @@ class _ScreenLoginState extends State<ScreenLogin> {
                     ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return "This field can't be empty";
+                        return "Password can't be empty";
                       } else if (value != "password") {
                         return "Wrong password";
                       } else {
@@ -109,7 +109,7 @@ class _ScreenLoginState extends State<ScreenLogin> {
                         },
                         label: const Text('Forgot Password'),
                         icon: const Icon(Icons.question_mark_outlined),
-                      ), 
+                      ),
                       const SizedBox(
                         width: 8,
                       ),
