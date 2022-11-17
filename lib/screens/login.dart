@@ -104,11 +104,12 @@ class _ScreenLoginState extends State<ScreenLogin> {
                         label: const Text('Login'),
                       ),
                       ElevatedButton.icon(
-                          onPressed: () {
-                            hint(context);
-                          },
-                          icon: const Icon(Icons.question_mark_outlined),
-                          label: const Text('Forgot Password')),
+                        onPressed: () {
+                          hint(context);
+                        },
+                        label: const Text('Forgot Password'),
+                        icon: const Icon(Icons.question_mark_outlined),
+                      ), 
                       const SizedBox(
                         width: 8,
                       ),
