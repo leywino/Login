@@ -4,14 +4,14 @@ import 'package:login/screens/home.dart';
 import 'package:login/screens/login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class ScreenSplash extends StatefulWidget {
-  const ScreenSplash({super.key});
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
 
   @override
-  State<ScreenSplash> createState() => _ScreenSplashState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _ScreenSplashState extends State<ScreenSplash> {
+class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     checkUserLoggedIn();
